@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player System</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/image/the_icon.png" type="image/png" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="panel">
+        <h2 class="title">
+          Playing music <span id="current_song_number">1</span> of
+          <span id="total_song">3</span>
+        </h2>
+        <div class="circle_cover">
+          <img
+            class="circle_image"
+            src="assets/image/jeene_laga_hoon.webp"
+            alt="circle_cover"
+          />
+        </div>
+        <h3 class="song_name">Jeene Laga Hoon</h3>
+        <p class="artist_name">Atif Aslam</p>
+        <audio id="audio" src="assets/songs/Jeene Laga hu.m4a"></audio>
+        <div class="ranges">
+          <div class="time-stamps">
+            <span id="current-time">00:00</span>
+            <input type="range" name="" id="audio_line" /> <br />
+            <span id="total-time">00:00</span>
+          </div>
+          <div class="volume_image_control">
+            <button id="volume-down" class="btn">
+              <img
+                src="assets/svgs/volume-down.svg"
+                alt="volume-down"
+                class="btn_svg"
+              />
+            </button>
+            <input type="range" name="" id="volume-line" />
+
+            <button id="volume-up" class="btn">
+              <img
+                src="assets/svgs/volume-up.svg"
+                alt="volume-up"
+                class="btn_svg"
+              />
+            </button>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button type="button" class="btn" id="prev">
+            <img
+              class="btn_svg"
+              src="assets/svgs/skip-start.svg"
+              alt="prev button"
+            />
+          </button>
+          <button type="button" class="btn" id="play">
+            <img
+              id="play_pause"
+              class="btn_svg"
+              src="assets/svgs/play-circle-fill.svg"
+              alt="play pause button"
+            />
+          </button>
+          <button type="button" class="btn" id="next">
+            <img
+              class="btn_svg"
+              src="assets/svgs/skip-end.svg"
+              alt="next button"
+            />
+          </button>
+        </div>
+        <div class="bottom-controls">
+          <button type="button" id="shuffle" class="btn">
+            <img
+              class="btn_svg"
+              src="assets/svgs/shuffle.svg"
+              alt="shuffle button"
+            />
+          </button>
+          <button type="button" id="list" class="btn">
+            <img
+              class="btn_svg"
+              src="assets/svgs/play.svg"
+              alt="playlist button"
+            />
+          </button>
+        </div>
+      </div>
+      <div class="playlist">
+        <h2 class="header">Song List</h2>
+        <div class="song-list" id="song_list"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
