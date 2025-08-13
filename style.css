@@ -277,10 +277,7 @@ input[type="range"] {
   gap: 1rem; /* Add spacing between buttons and range */
 }
 
-/* .btn img {
+.btn img {
   filter: brightness(0) invert(1);
-} */
+}
 
-button img {
-  filter: brightness(0) invert(1);
-} 
